@@ -6,6 +6,5 @@ Foundation_app is an application API that was created as a part of school projec
 
 ## Functionalities 
 
-The application lets users to create new accounts and confirm it by email, login to them, create new orders, pick-up existing and generete PDF after finishing order with details about it.
-
-
+The application lets users to create new accounts and confirm it by email. After succesfully registration a user can login in. During this procces the application valids
+credentials entered by a user and if they are corecct returns JWT token with refresh token that its used to authorization. Moreover a user can create new orders, pick-up existing and generete PDFs with details about them only if they are done.
