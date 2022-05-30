@@ -25,7 +25,7 @@ public class RequestCategoryServiceImpl implements RequestCategoryService {
             return requestCategory.get();
 
         } else {
-            throw new RuntimeException("RequestCategory not found id -  " + id);
+            throw new RuntimeException("RequestCategory not found id - : " + id);
         }
     }
 

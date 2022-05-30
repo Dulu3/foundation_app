@@ -21,7 +21,7 @@ import java.util.Set;
 @Component
 public class JwtFilter extends BasicAuthenticationFilter {
 
-    private String jwtSecret = "n4$lJ*jDAl<spjj";
+    private static final String jwtSecret = "n4$lJ*jDAl<spjj";
 
     public JwtFilter(AuthenticationManager authenticationManager) {
         super(authenticationManager);

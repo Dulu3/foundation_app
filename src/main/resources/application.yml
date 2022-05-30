@@ -1,6 +1,6 @@
 spring:
   base:
-    uri: http://localhost:8080
+    uri: http://localhost:8081
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/fundacjaprojekt?useSSL=false&allowPublicKeyRetrieval=true

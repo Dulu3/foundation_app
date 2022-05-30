@@ -10,9 +10,9 @@ import java.util.Date;
 @Component
 public class JwtUtils {
 
-    private String jwtSecret = "n4$lJ*jDAl<spjj";
+    private static final String jwtSecret = "n4$lJ*jDAl<spjj";
 
-    private int jwtExpirationMs = 5 * 60 * 1000;
+    private static final int jwtExpirationMs = 5 * 60 * 1000;
 
     public String generateJwtToken(LoginUserDTO userDTO) {
         return generateTokenFromUsername(userDTO.getUsername());

@@ -9,6 +9,5 @@ import java.util.Optional;
 @Repository
 public interface AccessTokenRepository extends JpaRepository<AccessToken, Long> {
     Optional<AccessToken> findById(Long id);
-
     Optional<AccessToken> findByToken(String token);
 }

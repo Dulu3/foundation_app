@@ -28,7 +28,7 @@ public class BenefitServiceImpl implements BenefitService {
         if (benefit.isPresent()) {
             return benefit.get();
         } else {
-            throw new RuntimeException("Benefit not found id - :" + id);
+            throw new RuntimeException("Benefit not found id - : " + id);
         }
     }
 

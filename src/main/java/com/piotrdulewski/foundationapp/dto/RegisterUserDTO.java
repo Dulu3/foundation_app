@@ -2,8 +2,10 @@ package com.piotrdulewski.foundationapp.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.annotations.ApiModel;
+import lombok.Builder;
 import lombok.Value;
 
+@Builder
 @ApiModel
 @Value
 public class RegisterUserDTO {

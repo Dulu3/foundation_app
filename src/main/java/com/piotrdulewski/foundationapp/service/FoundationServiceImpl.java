@@ -28,7 +28,7 @@ public class FoundationServiceImpl implements FoundationService {
         if (foundation.isPresent()) {
             return foundation.get();
         } else {
-            throw new RuntimeException("Foundation not found id -" + id);
+            throw new RuntimeException("Foundation not found id - : " + id);
         }
     }
 

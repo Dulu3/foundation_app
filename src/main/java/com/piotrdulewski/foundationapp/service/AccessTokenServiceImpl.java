@@ -35,11 +35,11 @@ public class AccessTokenServiceImpl implements AccessTokenService {
         switch (type) {
             case "user":
                 accessToken.setUserDetails(userRepository.findById(userId)
-                        .orElseThrow(() -> new RuntimeException("User not found - " + userId)));
+                        .orElseThrow(() -> new RuntimeException("User not found - : " + userId)));
                 break;
             case "foundation":
                 accessToken.setUserDetails(foundationRepository.findById(userId)
-                        .orElseThrow(() -> new RuntimeException("Foundation not found - " + userId)));
+                        .orElseThrow(() -> new RuntimeException("Foundation not found - : " + userId)));
                 break;
         }
         accessToken.setCratedAt(new Timestamp(System.currentTimeMillis()));

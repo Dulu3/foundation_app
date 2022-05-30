@@ -29,7 +29,7 @@ public class RequestServiceImpl implements RequestService {
             return request.get();
 
         } else {
-            throw new RuntimeException("Request not found id -  " + id);
+            throw new RuntimeException("Request not found id -  : " + id);
         }
     }
 

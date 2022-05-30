@@ -155,6 +155,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
             Optional<User> user = userRepository.findByEmail(loginUserDTO.getUsername());
             if (user.isEmpty()) return null;
             User user1 = user.get();
+            if(!bCryptPasswordEncoder.matches(loginUserDTO.getPassword(), user1.getPassword())) return null;
             loginDTO = LoginDTO.builder()
                     .id(user1.getId())
                     .username(user1.getUsername())
@@ -162,6 +163,7 @@ public class AuthorizationServiceImpl implements AuthorizationService {
                     .build();
         } else {
             Foundation foundation1 = foundation.get();
+            if(!bCryptPasswordEncoder.matches(loginUserDTO.getPassword(), foundation1.getPassword())) return null;
             loginDTO = LoginDTO.builder()
                     .id(foundation1.getId())
                     .username(foundation1.getUsername())
